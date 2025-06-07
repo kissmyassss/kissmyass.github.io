@@ -36,12 +36,25 @@
     .songs li {
       margin: 0.3rem 0;
     }
+    .cover {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+    }
+  .album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
   </style>
 </head>
 <body>
   <h1>林俊傑 歷年專輯</h1>
 
   <div class="album">
+    <img src="images/2003.jpg" alt="樂行者 專輯封面" class="cover" />
     <h2 onclick="toggleSongs(this)">2003 - 樂行者</h2>
     <ul class="songs">
       <li>就是我</li>
