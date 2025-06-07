@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>林俊傑 歷年專輯</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: #f0f0f0;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .album {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .album h2 {
+      margin: 0;
+      cursor: pointer;
+    }
+    .songs {
+      display: none;
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+    }
+    .songs li {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>林俊傑 歷年專輯</h1>
+
+  <div class="album">
+    <h2 onclick="toggleSongs(this)">2003 - 樂行者</h2>
+    <ul class="songs">
+      <li>就是我</li>
+      <li>第二天堂</li>
+      <li>翅膀</li>
+      <li>精靈</li>
+      <li>突然累了</li>
+      <li>會有那麼一天</li>
+      <li>還是會</li>
+    </ul>
+  </div>
+
+  <div class="album">
+    <h2 onclick="toggleSongs(this)">2004 - 編號89757</h2>
+    <ul class="songs">
+      <li>一千年以後</li>
+      <li>木乃伊</li>
+      <li>起床了</li>
+      <li>害怕</li>
+      <li>豆漿油條</li>
+    </ul>
+  </div>
+
+  <div class="album">
+    <h2 onclick="toggleSongs(this)">2006 - 曹操</h2>
+    <ul class="songs">
+      <li>曹操</li>
+      <li>不死之身</li>
+      <li>熟能生巧</li>
+      <li>你要的不是我</li>
+    </ul>
+  </div>
+
+  <!-- 你可以繼續加更多專輯 -->
+
+  <script>
+    function toggleSongs(element) {
+      const songs = element.nextElementSibling;
+      if (songs.style.display === "none" || songs.style.display === "") {
+        songs.style.display = "block";
+      } else {
+        songs.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
